@@ -1,16 +1,64 @@
-import { ChartVersion, ChartPackages, Lang } from "./googleChartData";
+export interface GoogleChartsVisualization
+  extends GoogleChartReformatData,
+    GoogleChartsDataTable,
+    GoogleChartsDashboards,
+    GoogleChartsControlsGallery {
+  AreaChart: (el: Element) => void;
+  BarChart: any;
+  BubbleChart: any;
+  CandlestickChart: any;
+  ColumnChart: any;
+  ComboChart: any;
+  Gauge: any;
+  GeoChart: any;
+  Histogram: any;
+  LineChart: any;
+  PieChart: any;
+  ScatterChart: any;
+  SparklineChart: any;
+  SteppedAreaChart: any;
+  Timeline: any;
+  CoreChart: any;
 
-export interface Google {
-  charts: GoogleCharts;
-  load: any;
-  setOnLoadCallback: any;
-  visualization: GoogleChartsVisualization;
-}
+  ColumnSelector: any;
+  RangeSelector: any;
+  SelectorUi: any;
+  ChartSelection: any;
 
-interface GoogleCharts {
-  load: GoogleChartLoad;
-  loader: GoogleChartsLoader;
-  setOnLoadCallback: (callback: DrawCallback) => void;
+  Choreographer: any;
+
+  DrilldownOperator: any;
+  DrilldownOperatorUi: any;
+  Operator: any;
+
+  GadgetHelper: any;
+
+  HeadlessUi: any;
+
+  RemoteDataSource: any;
+
+  Locale: string;
+  ModulePath: Object;
+  Version: string;
+
+  createSnippet: any;
+  createUrl: any;
+  createWrapper: any;
+
+  data: any;
+  datautils: any;
+
+  drawChart: any;
+  drawDrilldown: any;
+  drawFromUrl: any;
+  drawToolbar: any;
+  errors: any;
+  events: any;
+
+  isDebug: boolean;
+  isPseudo: boolean;
+
+  mapsApiKey: Object;
 }
 
 interface GoogleChartReformatData {
@@ -90,91 +138,4 @@ interface GoogleChartsDataTable {
   QueryResponse: any;
   QueryWrapper: any;
   CustomQuery: any;
-}
-
-interface GoogleChartsVisualization
-  extends GoogleChartReformatData,
-    GoogleChartsDataTable,
-    GoogleChartsDashboards,
-    GoogleChartsControlsGallery {
-  AreaChart: (el: Element) => void;
-  BarChart: any;
-  BubbleChart: any;
-  CandlestickChart: any;
-  ColumnChart: any;
-  ComboChart: any;
-  Gauge: any;
-  GeoChart: any;
-  Histogram: any;
-  LineChart: any;
-  PieChart: any;
-  ScatterChart: any;
-  SparklineChart: any;
-  SteppedAreaChart: any;
-  Timeline: any;
-  CoreChart: any;
-
-  ColumnSelector: any;
-  RangeSelector: any;
-  SelectorUi: any;
-  ChartSelection: any;
-
-  Choreographer: any;
-
-  DrilldownOperator: any;
-  DrilldownOperatorUi: any;
-  Operator: any;
-
-  GadgetHelper: any;
-
-  HeadlessUi: any;
-
-  RemoteDataSource: any;
-
-  Locale: string;
-  ModulePath: Object;
-  Version: string;
-
-  createSnippet: any;
-  createUrl: any;
-  createWrapper: any;
-
-  data: any;
-  datautils: any;
-
-  drawChart: any;
-  drawDrilldown: any;
-  drawFromUrl: any;
-  drawToolbar: any;
-  errors: any;
-  events: any;
-
-  isDebug: boolean;
-  isPseudo: boolean;
-
-  mapsApiKey: Object;
-}
-
-type DrawCallback = () => void;
-
-type GoogleChartLoad = (
-  version: ChartVersion,
-  settings: ChartLoadSettings
-) => void;
-
-interface ChartLoadSettings {
-  packages: ChartPackages[];
-  language: Lang;
-  callback: Function;
-  mapsApiKey: string;
-}
-
-interface GoogleChartsLoader {
-  VersionSpecific: GoogleChartsLoaderVersion;
-}
-
-interface GoogleChartsLoaderVersion {
-  load: any;
-  makeCssUrl: any;
-  setOnLoadCallback: any;
 }
