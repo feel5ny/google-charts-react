@@ -1,15 +1,15 @@
 import * as React from "react";
 import ReactGoogleChart from "../../../joy_modules/react-google-charts/ReactGoogleChart";
-import { BarChartsData } from "../../../joy_modules/react-google-charts/GoogleChart/type/googleChartData";
+import { ComboChartsData } from "../../../joy_modules/react-google-charts/GoogleChart/type/googleChartData";
 import { ICommonProps } from "../../../joy_modules/react-google-charts/type/reactGoogleChart";
 
-namespace BarChart {
+namespace ComboChart {
   export interface IProps extends ICommonProps {
-    dataTable: BarChartsData;
+    dataTable: ComboChartsData;
   }
 }
 
-const BarChart: React.SFC<BarChart.IProps> = ({
+const ComboChart: React.SFC<ComboChart.IProps> = ({
   dataTable,
   option,
   nodeInfo
@@ -18,9 +18,9 @@ const BarChart: React.SFC<BarChart.IProps> = ({
     <ReactGoogleChart
       chartInfo={{
         setting: {
-          packages: ["corechart", "bar"]
+          packages: ["corechart"]
         },
-        chartName: "BarCharts"
+        chartName: "ComboCharts"
       }}
       dataInfo={{ dataTable, option }}
       nodeInfo={{
@@ -30,4 +30,4 @@ const BarChart: React.SFC<BarChart.IProps> = ({
     />
   );
 };
-export default BarChart;
+export default ComboChart;

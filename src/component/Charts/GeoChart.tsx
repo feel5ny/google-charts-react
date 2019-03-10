@@ -1,15 +1,15 @@
 import * as React from "react";
 import ReactGoogleChart from "../../../joy_modules/react-google-charts/ReactGoogleChart";
-import { BarChartsData } from "../../../joy_modules/react-google-charts/GoogleChart/type/googleChartData";
+import { GeoChartsData } from "../../../joy_modules/react-google-charts/GoogleChart/type/googleChartData";
 import { ICommonProps } from "../../../joy_modules/react-google-charts/type/reactGoogleChart";
 
-namespace BarChart {
+namespace GeoChart {
   export interface IProps extends ICommonProps {
-    dataTable: BarChartsData;
+    dataTable: GeoChartsData;
   }
 }
 
-const BarChart: React.SFC<BarChart.IProps> = ({
+const GeoChart: React.SFC<GeoChart.IProps> = ({
   dataTable,
   option,
   nodeInfo
@@ -18,9 +18,10 @@ const BarChart: React.SFC<BarChart.IProps> = ({
     <ReactGoogleChart
       chartInfo={{
         setting: {
-          packages: ["corechart", "bar"]
+          packages: ["geochart"],
+          mapsApiKey: "AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY"
         },
-        chartName: "BarCharts"
+        chartName: "GeoCharts"
       }}
       dataInfo={{ dataTable, option }}
       nodeInfo={{
@@ -30,4 +31,4 @@ const BarChart: React.SFC<BarChart.IProps> = ({
     />
   );
 };
-export default BarChart;
+export default GeoChart;
