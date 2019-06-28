@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.1](https://github.com/feel5ny/google-charts-react/compare/v3.0.0...v3.0.1) (2019-06-28)
+
+
+### Bug Fixes
+
+* 버그 픽스 ([8537fe8](https://github.com/feel5ny/google-charts-react/commit/8537fe8))
+
+
+
 ## [3.0.0](https://github.com/feel5ny/google-charts-react/compare/v2.1.0...v3.0.0) (2019-06-28)
 
 
