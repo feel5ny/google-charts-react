@@ -24,7 +24,6 @@ const App = () => {
           idName: 'pie_charts'
         }}
       />
-      ㅁㄴㅇㄹ
       <GaugeChart
         dataTable={arrayToData}
         nodeInfo={{
