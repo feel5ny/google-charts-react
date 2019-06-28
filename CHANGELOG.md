@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/feel5ny/google-charts-react/compare/v2.1.0...v3.0.0) (2019-06-28)
+
+
+### chore
+
+* drop Node 6 from testing matrix ([b0d10a5](https://github.com/feel5ny/google-charts-react/commit/b0d10a5))
+
+
+### BREAKING CHANGES
+
+* drop Node 6 from testing matrix
+
+
+
 ## [2.1.0](https://github.com/feel5ny/google-charts-react/compare/v2.0.0...v2.1.0) (2019-06-28)
 
 
