@@ -18,6 +18,7 @@ const App = () => {
   ];
   return (
     <div>
+      ㅁㄴㅇㄹ
       <PieChart
         dataTable={arrayToData}
         nodeInfo={{
