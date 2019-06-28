@@ -30,7 +30,6 @@ const App = () => {
           idName: 'gauge_charts'
         }}
       />
-      ㅁㄴㅇㄹ
       <ComboChart
         dataTable={arrayToData}
         nodeInfo={{
