@@ -25,17 +25,17 @@
     "@babel/preset-react": "^7.0.0",
     "@types/react": "^16.8.6",
     "@types/react-dom": "^16.8.2",
-    "babel-loader": "^8.0.5",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
+    "babel-loader": "^8.3.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-load-script": "0.0.6",
     "standard-version": "^6.0.1",
-    "ts-loader": "^5.3.3",
+    "ts-loader": "^9.4.2",
     "typescript": "^3.3.3333",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^3.2.1"
   }
 }
